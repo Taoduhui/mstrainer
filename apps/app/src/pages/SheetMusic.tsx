@@ -21,7 +21,7 @@ function SheetMusic() {
     // Simulate file processing
     setTimeout(() => {
       const newFile: SheetMusicFile = {
-        id: Math.random().toString(36).substr(2, 9),
+        id: crypto.randomUUID(),
         name: file.name,
         uploadedAt: new Date(),
         noteCount: Math.floor(Math.random() * 500) + 100, // Placeholder

@@ -58,7 +58,7 @@ function Training() {
     const octave = Math.floor(Math.random() * 3) + 3
     
     setCurrentNote({
-      id: Math.random().toString(36).substr(2, 9),
+      id: crypto.randomUUID(),
       note,
       octave,
       nextReview: new Date(),

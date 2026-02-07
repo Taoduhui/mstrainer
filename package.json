@@ -1,0 +1,21 @@
+{
+  "name": "mstrainer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Instrument training software with sheet music import and forgetting curve-based learning",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @mstrainer/app dev",
+    "build": "pnpm --filter @mstrainer/app build",
+    "preview": "pnpm --filter @mstrainer/app preview",
+    "lint": "pnpm --filter @mstrainer/app lint",
+    "type-check": "pnpm --filter @mstrainer/app type-check"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
